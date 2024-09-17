@@ -12,6 +12,7 @@ const initialState = {
 };
 
 function AuthLogin() {
+  console.log(import.meta.env.VITE_API_PROD_BACKEND);
   const [formData, setFormData] = useState(initialState);
   const dispatch = useDispatch();
   const { toast } = useToast();
